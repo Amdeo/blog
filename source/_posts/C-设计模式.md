@@ -145,10 +145,10 @@ singleton* singleton::getinstance()
 //双检查锁 懒汉模式
 singleton* singleton::getinstance()
 {   
-    if(m_pInstance == NULL)
+    if (m_pInstance == NULL)
     {
         Lock lock； //加锁  最差情况下会阻塞几个线程，只有实例创建完成，之后所有调用这个函数，不会加锁了
-        if(m_pInstance == NULL)
+        if (m_pInstance == NULL)
         {
             m_pInstance = new singleton();
         }     

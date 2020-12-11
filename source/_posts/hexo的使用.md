@@ -96,3 +96,20 @@ local_search:
 3. 配置typora
 
    ![1574954911889](hexo%E7%9A%84%E4%BD%BF%E7%94%A8/1574954911889.png)
+
+```
+../../source/_posts//${filename}
+```
+
+## 报错
+
+1.
+
+> Accessing non-existent property ‘lineno’ of module exports inside circular dependency
+
+![在这里插入图片描述](hexo%E7%9A%84%E4%BD%BF%E7%94%A8/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTAyNjM0MjM=,size_16,color_FFFFFF,t_70.png)
+
+版本：
+
+换一个低版本的Node，我换成`Node 12.14.0`
+
