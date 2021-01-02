@@ -162,9 +162,9 @@ sudo pacman -S deepin-screenshot
 
 配置系统快捷键
 
-![9e92caf9-c786-46e9-94be-17ef8ccbec46](Manjaro/9e92caf9-c786-46e9-94be-17ef8ccbec46.jpg)
+![9e92caf9-c786-46e9-94be-17ef8ccbec46](https://gitee.com/Cooper001/blog-img/raw/master/img/9e92caf9-c786-46e9-94be-17ef8ccbec46.jpg)
 
-![dac9ea2f-527f-46d9-8fc5-bf8d9fd70273](Manjaro/dac9ea2f-527f-46d9-8fc5-bf8d9fd70273.png)
+![dac9ea2f-527f-46d9-8fc5-bf8d9fd70273](https://gitee.com/Cooper001/blog-img/raw/master/img/dac9ea2f-527f-46d9-8fc5-bf8d9fd70273.png)
 
 
 ## 安装Anaconda

@@ -8,8 +8,8 @@ subtitle: ""
 description: ""
 keywords:
 author: cooper yuan
-# language: zh-Hans
-language: zh-CN
+language: zh-Hans
+# language: zh-CN
 timezone: ""
 
 # URL
@@ -92,10 +92,10 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 #theme: landscape
-#theme: next
+theme: next
 # theme: yun
 #theme: Butterfly
-theme: ayer
+# theme: ayer
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:

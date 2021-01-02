@@ -9,7 +9,7 @@ description:
 comments: 
 ---
 
-![img](Vim/vi-vim-cheat-sheet-sch.gif)
+![img](https://gitee.com/Cooper001/blog-img/raw/master/img/vi-vim-cheat-sheet-sch.gif)
 
 我的一些配置：
 

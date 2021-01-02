@@ -95,7 +95,7 @@ local_search:
 
 3. 配置typora
 
-   ![1574954911889](hexo%E7%9A%84%E4%BD%BF%E7%94%A8/1574954911889.png)
+   ![1574954911889](https://gitee.com/Cooper001/blog-img/raw/master/img/1574954911889.png)
 
 ```
 ../../source/_posts//${filename}
@@ -107,7 +107,7 @@ local_search:
 
 > Accessing non-existent property ‘lineno’ of module exports inside circular dependency
 
-![在这里插入图片描述](hexo%E7%9A%84%E4%BD%BF%E7%94%A8/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTAyNjM0MjM=,size_16,color_FFFFFF,t_70.png)
+![在这里插入图片描述](https://gitee.com/Cooper001/blog-img/raw/master/img/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTAyNjM0MjM=,size_16,color_FFFFFF,t_70.png)
 
 版本：
 

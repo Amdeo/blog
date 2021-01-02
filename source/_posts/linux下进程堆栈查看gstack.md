@@ -27,4 +27,4 @@ gstack pid
 gstack 29913
 ```
 
-![image-20200620214020985](linux%E4%B8%8B%E8%BF%9B%E7%A8%8B%E5%A0%86%E6%A0%88%E6%9F%A5%E7%9C%8Bgstack/image-20200620214020985.png)
+![image-20200620214020985](https://gitee.com/Cooper001/blog-img/raw/master/img/image-20200620214020985.png)

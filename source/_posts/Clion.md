@@ -15,18 +15,20 @@ comments: true
 
 [MinGw]([https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/])点击下载
 
-![img](Clion/1565015562631.png)
+![img](https://gitee.com/Cooper001/blog-img/raw/master/img/1565015562631.png)
 
 
 将下载的文件进行解压
 
-![img](Clion/1565016090640.png)
+![img](https://gitee.com/Cooper001/blog-img/raw/master/img/1565016090640.png)
 
 打开clion的setting
 
-![img](Clion/1565016173259.png)
+![img](https://gitee.com/Cooper001/blog-img/raw/master/img/1565016173259.png)
 
-![img](Clion/1565016235330.png)
+
+
+![img](https://gitee.com/Cooper001/blog-img/raw/master/img/1565016235330.png)
 
 
 # 在clion中使用openGL
@@ -37,7 +39,7 @@ comments: true
 
 选择for mingw版本的
 
-![img](Clion/1565016355294.png)
+![img](https://gitee.com/Cooper001/blog-img/raw/master/img/1565016355294.png)
 
 2、打开压缩包，里面有bin，include，lib三个文件夹
 

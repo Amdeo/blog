@@ -47,10 +47,10 @@ git clone git@<服务器公网IP>:/home/git/myserver.git
 
 增加一个远端仓库
 
-![1574780797750](%E5%9C%A8%E7%A7%81%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%88%9B%E5%BB%BAgit%E4%BB%93/1574780797750.png) 
+![1574780797750](https://gitee.com/Cooper001/blog-img/raw/master/img/1574780797750.png) 
 
 推送时选择新增的地址
-![1574780839801](%E5%9C%A8%E7%A7%81%E4%BA%BA%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%88%9B%E5%BB%BAgit%E4%BB%93/1574780839801.png)
+![1574780839801](https://gitee.com/Cooper001/blog-img/raw/master/img/1574780839801.png)
 
 
 ## 问题

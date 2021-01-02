@@ -33,7 +33,7 @@ sudo yum install docker-ce
 
 配置阿里云镜像加速器
 
-![image-20200929204854511](docker/image-20200929204854511.png)
+![image-20200929204854511](https://gitee.com/Cooper001/blog-img/raw/master/img/image-20200929204854511.png)
 
 ```
 # 启动镜像

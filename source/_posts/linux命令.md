@@ -29,7 +29,7 @@ which -- locate a program file in the user's path
 which [-as] program ...
 ```
 
-![image-20200102225812732](linux%E5%91%BD%E4%BB%A4/image-20200102225812732.png)
+![image-20200102225812732](https://gitee.com/Cooper001/blog-img/raw/master/img/image-20200102225812732.png)
 
 
 
@@ -178,7 +178,7 @@ ssh-keygen -t rsa
 
 在客户机的客户目录下会生成 **.ssh**目录
 
-![1580882279416](linux%E5%91%BD%E4%BB%A4/1580882279416.png)
+![1580882279416](https://gitee.com/Cooper001/blog-img/raw/master/img/1580882279416.png)
 
 里面会包含id_rsa、id_rsa.pub(密钥和公钥)，将id_rsa.pub 传到服务器上。
 

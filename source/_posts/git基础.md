@@ -41,7 +41,7 @@ $ git config --global merge.tool vimdiff
 git config --list
 ```
 
-![image-20191220231611951](git%E5%9F%BA%E7%A1%80/image-20191220231611951.png)
+![image-20191220231611951](https://gitee.com/Cooper001/blog-img/raw/master/img/image-20191220231611951.png)
 
 查看某个配置
 
@@ -147,7 +147,7 @@ git remote add origin "URL"
 
 
 
-![1574781334458](git%E5%9F%BA%E7%A1%80/1574781334458.png)
+![1574781334458](https://gitee.com/Cooper001/blog-img/raw/master/img/1574781334458.png)
 
 ### git上传大文件
 

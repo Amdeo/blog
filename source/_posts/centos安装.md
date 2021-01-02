@@ -15,7 +15,7 @@ comments: true
 
 在弹出的“虚拟网络编辑器”窗口中选择NAT模式的，编辑为其分配地址池：
 
-![img](centos%E5%AE%89%E8%A3%85/784924-20170708202419878-583878644.png)
+![img](https://gitee.com/Cooper001/blog-img/raw/master/img/784924-20170708202419878-583878644.png)
 
 由于安装是最小系统，安装后的不能使用网络的需要配置下
 
@@ -32,7 +32,7 @@ vi /etc/sysconfig/network-scripts/ifcfg-ens33
 
 将ONBOOT改为yes：
 
-![img](centos%E5%AE%89%E8%A3%85/1567432884062.png)
+![img](https://gitee.com/Cooper001/blog-img/raw/master/img/1567432884062.png)
 
  
 
@@ -45,6 +45,6 @@ service network restart
 
 ping下百度
 
-![img](centos%E5%AE%89%E8%A3%85/1567432985759.png)
+![img](https://gitee.com/Cooper001/blog-img/raw/master/img/1567432985759.png)
 
  

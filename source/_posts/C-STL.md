@@ -51,7 +51,7 @@ comments:
 
 ## 序列式容器
 
- ![img](C-STL/2-1P911110REB.jpg) 
+ ![img](https://gitee.com/Cooper001/blog-img/raw/master/img/2-1P911110REB.jpg) 
 
 ### array
 
@@ -350,7 +350,7 @@ vector<T>().swap(myvector);	//清空myvector
 
 设计原理：
 
- ![deque容器的底层实现](C-STL/2-19121316430U40.gif) 
+ ![deque容器的底层实现](https://gitee.com/Cooper001/blog-img/raw/master/img/2-19121316430U40.gif) 
 
 
 

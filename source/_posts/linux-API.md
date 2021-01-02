@@ -23,7 +23,7 @@ pid_t fork(void);
 
 
 
- ![img](linux-API/20160909221749058.jpg)
+ ![img](https://gitee.com/Cooper001/blog-img/raw/master/img/20160909221749058.jpg)
 
 从图中我们可以看出除了正文段外，子进程的所有其它段都分配了物理空间，并将父进程的相关内容拷贝过来。父进程的task_struct结构中的打开文件描述符，进程组ID，。
 

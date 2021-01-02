@@ -238,4 +238,4 @@ $startx
 
 ### linux下多窗口分屏
 
-![image-20191113224500939](ubuntu/image-20191113224500939.png)
+![image-20191113224500939](https://gitee.com/Cooper001/blog-img/raw/master/img/image-20191113224500939.png)

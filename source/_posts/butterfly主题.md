@@ -87,8 +87,8 @@ theme_color:
   read-mode-bg_color: '#FAF9DE'
 ```
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-color_1.png)
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-color_2.png)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-color_1.png)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-color_2.png)
 
 ## 代码高亮主题
 
@@ -108,23 +108,23 @@ highlight_theme: light
 
 > default
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-code-default.png)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-code-default.png)
 
 > darker
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-code-darker.png)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-code-darker.png)
 
 > pale night
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-code-pale-night.png)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-code-pale-night.png)
 
 > light
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-code-light.png)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-code-light.png)
 
 > ocean
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-highlight-ocean.png)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-highlight-ocean.png)
 
 ## 代码复制
 
@@ -136,7 +136,7 @@ highlight_theme: light
 highlight_copy: true
 ```
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-code-copy.png)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-code-copy.png)
 
 ## 代码换行
 
@@ -160,11 +160,11 @@ highlight:
 
 > 设置`code_word_wrap`之前:
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-code-word-wrap-before.png)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-code-word-wrap-before.png)
 
 > 设置`code_word_wrap`之后:
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-code-word-wrap-after.png)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-code-word-wrap-after.png)
 
 ## 社交图标
 
@@ -187,15 +187,15 @@ social:
 
 图标名可在这寻找
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-fontawesome.png)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-fontawesome.png)
 
 PC:
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-social-icon-pc.png)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-social-icon-pc.png)
 
 Mobile:
 
-![1560603353743](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-socila-icon-mobile.png)
+![1560603353743](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-socila-icon-mobile.png)
 
 ## 导航菜单
 
@@ -214,7 +214,7 @@ menu:
 
 > 必须是 `/xxx/`，后面`||`分开，然后写图标名。菜单名称可自己修改。
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-menu.png)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-menu.png)
 
 ## 主页文章节选(自动节选和文章页description)
 
@@ -230,7 +230,7 @@ auto_excerpt:
 
 如果没有开启`自动节选`，则会显示文章页front-matter里面设置的`description`。
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-post-description.png)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-post-description.png)
 
 > 注意：如果开启了自动节选功能，代码块的显示将有可能不正常。
 
@@ -279,11 +279,11 @@ post_meta:
 
 `categories` 是否显示分类
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-post-info.png)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-post-info.png)
 
 `tags`是否显示标签
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-post-tag.png)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-post-tag.png)
 
 ## 文章版权
 
@@ -318,7 +318,7 @@ reward:
         text: 支付宝
 ```
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-post-donate.png)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-post-donate.png)
 
 ## 头像
 
@@ -328,7 +328,7 @@ reward:
 avatar: https://xxxx/avatar.png
 ```
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-avatar.png)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-avatar.png)
 
 ## TOC
 
@@ -354,11 +354,11 @@ toc:
 
 > `enable: true`
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-toc-true.png)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-toc-true.png)
 
 > `number: false`
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-toc-number-false.png)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-toc-number-false.png)
 
 ### 设置是否自动打开TOC
 
@@ -379,7 +379,7 @@ auto_open_sidebar:
 since: 2018
 ```
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-since.png)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-since.png)
 
 ## 页脚自定义文本
 
@@ -391,7 +391,7 @@ since: 2018
 footer_custom_text: Hi, welcome to my <a href="https://jerryc.me/">blog</a>!
 ```
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-footer-text.png)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-footer-text.png)
 
 ## ICP
 
@@ -417,7 +417,7 @@ nightshift:
   enable: true
 ```
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-dark-mode.png)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-dark-mode.png)
 
 ## 阅读模式
 
@@ -432,7 +432,7 @@ readmode:
   enable: true
 ```
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-read-mode.png)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-read-mode.png)
 
 ## 简繁转换
 
@@ -461,11 +461,11 @@ translate:
 
 > 简体
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-simp.png)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-simp.png)
 
 > 繁体
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-tranditional.png)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-tranditional.png)
 
 ## 运行时间
 
@@ -482,7 +482,7 @@ runtimeshow:
   #也可以写成 年/月/日 时间
 ```
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-runtime.png)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-runtime.png)
 
 ## 侧边排版
 
@@ -515,7 +515,7 @@ related_post:
   limit: 6 # 显示推荐文章数目
 ```
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-relatedpost.png)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-relatedpost.png)
 
 ## 自定义字体
 
@@ -543,7 +543,7 @@ subtitle:
   sub2: Never put off till tomorrow what you can do today
 ```
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-index-subtitle.gif)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-index-subtitle.gif)
 
 # 主题页面
 
@@ -659,7 +659,7 @@ type: "gallery"
 ```
 > gallery-item 也拥有 fancybox 的效果!
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-gallery.png)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-gallery.png)
 
 ## 友情链接
 
@@ -730,8 +730,8 @@ Flink:
   comment: 如果需要交换友链,请留言
 ```
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-flink-headline.png)
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-flink.png)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-flink-headline.png)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-flink.png)
 
 # 第三方支持
 
@@ -751,7 +751,7 @@ disqus:
   shortname: 你的disqus的 short-name
 ```
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-disqus.png)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-disqus.png)
 
 ### Laibili（来必力）
 
@@ -767,9 +767,9 @@ laibili:
 
 laibili 的 uid 你能在这里找到:
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-laibili.jpg)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-laibili.jpg)
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-laibili_2.png)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-laibili_2.png)
 
 ### Gitment
 
@@ -786,7 +786,7 @@ gitment:
   client_secret: 你的client secret
 ```
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-gitment.png)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-gitment.png)
 
 ### Gitalk
 
@@ -804,7 +804,7 @@ gitalk:
   admin: 该仓库的拥有者或协作者
 ```
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-gitalk.png)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-gitalk.png)
 
 ### Valine
 
@@ -826,7 +826,7 @@ valine:
   guest_info: nick,mail,link #valine comment header inf
 ```
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-valine.png)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-valine.png)
 
 ## 分享
 
@@ -836,7 +836,7 @@ valine:
 
 > 找到你的 pub-id
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-addthis.jpg)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-addthis.jpg)
 
 配置`butterfly.yml`
 
@@ -858,7 +858,7 @@ sharejs:
   sites: facebook,twitter,wechat,weibo,qq  #想要显示的内容
 ```
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-sharejs.png)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-sharejs.png)
 
 ### Addtoany
 
@@ -877,7 +877,7 @@ addtoany:
     - copy_link
 ```
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-addtoany.png)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-addtoany.png)
 
 ## 搜索系统
 
@@ -950,7 +950,7 @@ qihu_site_verification:
 
 2. 找到你百度统计的统计代码
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-baidu-tongji.jpg)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-baidu-tongji.jpg)
 
 3\. 配置`butterfly.yml`
 
@@ -964,7 +964,7 @@ baidu_analytics: 你的代码
 
 2. 找到你的谷歌分析的跟踪 ID
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-google-analytics.jpg)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-google-analytics.jpg)
 
 3. 配置`butterfly.yml`
 
@@ -987,9 +987,9 @@ busuanzi:
   page_pv: true
 ```
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-busuanzi-site-pv.png)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-busuanzi-site-pv.png)
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-pv.png)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-pv.png)
 
 ## MathJax
 
@@ -1009,11 +1009,11 @@ mathjax:
 
 以下操作在你 hexo 博客的目录下 (**不是 Butterfly 的目录!**):
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-mathjax.png)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-mathjax-20201222194744193.png)
 
 效果：
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-mathjax-2.jpg)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-mathjax-2.jpg)
 
 ## KaTeX
 
@@ -1062,7 +1062,7 @@ markdown_it_plus:
 
 因为 KaTeX 更快更轻量，因此没有 MathJax 的功能多（比如右键菜单）。为那些使用 MathJax 的用户，我们也为 KaTeX 默认添加了 [_Copy As TeX Code_](https://github.com/upupming/katex-copytex)的功能。
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-katex.gif)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-katex.gif)
 
 ## 特效
 
@@ -1077,7 +1077,7 @@ activate_power_mode:
   enable: true
 ```
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-type-animation.gif)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-type-animation.gif)
 
 ### 静止彩带
 
@@ -1107,7 +1107,7 @@ canvas_ribbon_piao:
   enable: true
 ```
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-canvas-ribbon-piao.gif)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-canvas-ribbon-piao.gif)
 
 ### 烟花效果
 
@@ -1117,7 +1117,7 @@ canvas_ribbon_piao:
 fireworks:
   enable: true
 ```
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-firewall.gif)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-firewall.gif)
 
 ## PWA
 
@@ -1237,7 +1237,7 @@ wordcount:
   enable: true
 ```
 
-![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-word-count.png)
+![](https://gitee.com/Cooper001/blog-img/raw/master/img/hexo-theme-butterfly-doc-word-count.png)
 
 ## 文章置顶
 

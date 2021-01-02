@@ -52,7 +52,7 @@ comments:
 
 ### OSI七层协议
 
- ![img](socke%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/78310a55b319ebc4e6e4dff08d26cffc1e17163e.png) 
+ ![img](https://gitee.com/Cooper001/blog-img/raw/master/img/78310a55b319ebc4e6e4dff08d26cffc1e17163e.png) 
 
 **物理层**：主要定义物理设备标准，如网线的接口类型、光纤的接口类型、各种传输介质的传输速率等。它的主要作用是传输`比特流`（就是1、0转化为电流强弱来进行传输，到达目的地后转化为1、0，也就是我i们常说的数模转换与模数转换）。
 
@@ -76,7 +76,7 @@ comments:
 
 `TCP/IP`协议簇按照层次由上而下可以分成4层：
 
-![image-20200608201136398](socke%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200608201136398.png)
+![image-20200608201136398](https://gitee.com/Cooper001/blog-img/raw/master/img/image-20200608201136398.png)
 
 **应用层**：包含所以高层协议，比如虚拟终端协议、文件传输协议、电子邮件传输协议、域名服务、超文本传送协议等等，这些就是对应用户常用的应用软件。
 
@@ -133,7 +133,7 @@ Socket，英文含义是“插座”，在linux环境下，用于表示进程间
 
 我们可以将socket看作为一个文件，可以通过文件描述符进行操作。
 
-![image-20200627182817665](socke%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200627182817665.png)
+![image-20200627182817665](https://gitee.com/Cooper001/blog-img/raw/master/img/image-20200627182817665.png)
 
 
 
@@ -1477,7 +1477,7 @@ server.cpp
 
 
 
- ![img](socke%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/v2-14e0536d872474b0851b62572b732e39_1440w.jpg) 
+ ![img](https://gitee.com/Cooper001/blog-img/raw/master/img/v2-14e0536d872474b0851b62572b732e39_1440w.jpg) 
 
 # select、poll、epoll之间的区别
 
@@ -1493,7 +1493,7 @@ poll本质上和select没有区别，它将用户传入的数组拷贝到内核�
 
 **epoll可以理解为event poll**，不同于忙轮询和无差别轮询，epoll会把哪个流发生了怎样的I/O事件通知我们。所以我们说epoll实际上是**事件驱动（每个事件关联上fd）**的，此时我们对这些流的操作都是有意义的。**（复杂度降低到了O(1)）**
 
-![image-20200731210247804](socke%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200731210247804.png)
+![image-20200731210247804](https://gitee.com/Cooper001/blog-img/raw/master/img/image-20200731210247804.png)
 
 ### epoll的两种触发模式
 
@@ -1503,4 +1503,4 @@ LT（水平触发）模式下，只要这个文件描述符还有数据可读，
 
 ET（边缘触发）模式下，在它检测到有 I/O 事件时，通过 epoll_wait 调用会得到有事件通知的文件描述符，对于每一个被通知的文件描述符，如可读，则必须将该文件描述符一直读到空，让 errno 返回 EAGAIN 为止，否则下次的 epoll_wait 不会返回余下的数据，会丢掉事件。如果ET模式不是非阻塞的，那这个一直读或一直写势必会在最后一次阻塞。
 
-![image-20200731210300948](socke%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/image-20200731210300948.png)
+![image-20200731210300948](https://gitee.com/Cooper001/blog-img/raw/master/img/image-20200731210300948.png)

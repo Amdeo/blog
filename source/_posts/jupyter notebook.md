@@ -33,4 +33,4 @@ jupyter notebook
 
 
 
-![image-20200112002102816](jupyter%20notebook/image-20200112002102816.png)
+![image-20200112002102816](https://gitee.com/Cooper001/blog-img/raw/master/img/image-20200112002102816.png)
