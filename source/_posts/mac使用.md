@@ -50,3 +50,13 @@ brew update
 sudo killall -HUP mDNSResponder
 ```
 
+查看端口使用
+
+```
+lsof
+
+lsof | less
+
+lsof -i:8080
+```
+
