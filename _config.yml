@@ -101,8 +101,11 @@ theme: next
 deploy:
   type: git
   repository:
-    github: git@github.com:Amdeo/Amdeo.github.io.git,master
-    gitee: https://gitee.com/Cooper001/blog.git,master
+    github: https://Amdeo:yuandong34%40%40@github.com/Amdeo/Amdeo.github.io.git,master
+    # gitee: https://gitee.com/Cooper001/blog.git,master
+    coding: https://looper2:yuandong34%40%40@e.coding.net/looper2/hexo/blog.git,master
+
+    # https://github.com/Amdeo/Amdeo.github.io.git
 
 search:
   path: search.xml
