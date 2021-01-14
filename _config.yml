@@ -103,7 +103,7 @@ deploy:
   repository:
     github: https://Amdeo:yuandong34%40%40@github.com/Amdeo/Amdeo.github.io.git,master
     # gitee: https://gitee.com/Cooper001/blog.git,master
-    coding: https://looper2:yuandong34%40%40@e.coding.net/looper2/hexo/blog.git,master
+    coding: https://PjipxiyqTG:89edd88599f58ad2a08e29b7832238026edfa664@e.coding.net/looper2/hexo/blog.git,master
 
     # https://github.com/Amdeo/Amdeo.github.io.git
 
