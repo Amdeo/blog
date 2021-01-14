@@ -33,6 +33,16 @@ django-admin startproject mysite
 python manage.py runserver
 ```
 
+# 不指定APP,就导出所有的数据
+```
+python manage.py dumpdata [app] > app_data.json
+```
+
+# 导入数据
+```
+python manage.py loaddata app_data.json
+```
+
 # django开发文档
 
 
