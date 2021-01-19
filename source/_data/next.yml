@@ -63,7 +63,7 @@ footer:
     version: true
   # -------------------------------------------------------------
   # Any custom text can be defined here.
-  custom_text: <a target="_blank" href="http://www.beian.miit.gov.cn">苏ICP备18059520号-1</a>
+  custom_text: <a target="_blank" href="https://beian.miit.gov.cn">苏ICP备18059520号-1</a>
 
 # ---------------------------------------------------------------
 # SEO Settings
