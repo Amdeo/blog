@@ -162,11 +162,139 @@ p{
 | p:nth-last-child(2) | p:nth-last-of-type(2) | 当前层级的倒数第2个p元素                                  |
 | :not(selector)      | :not(p)               | 除了括号中选择器中之外的元素                              |
 
+### 表单伪类
 
+表单属性样式
 
+```css
+input:enabled {
+    background: red;
+}
 
+input:disabled {
+    background: #dddddd;
+}
 
+input:checked+label {
+    color: green;
+}
+```
 
+表单必选样式
+
+```css
+input:required {
+    border: solid 2px blue;
+}
+
+input:optional {
+	background: #dcdcdc; 
+	border: none;
+}
+```
+
+表单验证样式
+
+```css
+input:valid {
+    border: solid 1px green;
+}
+
+input:invalid {
+    border: solid 1px red;
+}
+```
+
+### 字符伪类
+
+| 状态           | 示例           | 说明                         |
+| -------------- | -------------- | ---------------------------- |
+| ::first-letter | p:first-letter | 选择每个元素的首字母         |
+| ::first-line   | p:first-line   | 选择每个元素的首行           |
+| ::before       | p:before       | 在每个元素的内容之前插入内容 |
+| ::after        | p:after        | 在每个元素的内容之后插入内容 |
+
+## 元素权重
+
+元素会被多个样式一层层作用，这就是层叠样式表的来源。如果多个样式做用在元素上就会产生优先级权重问题。
+
+使用类、ID、伪类都有不同的权重，具体应用哪条规则要看权限大小。
+
+- 相同权重的规则应用最后出现的
+- 可以使用 `!important` 强制提升某个规则的权限
+
+### 权重应用
+
+| 规则            | 粒度 |
+| --------------- | ---- |
+| ID              | 0100 |
+| class，类属性值 | 0010 |
+| 标签,伪元素     | 0001 |
+| *               | 0000 |
+| 行内样式        | 1000 |
+
+### 强制优先级
+
+有时在规则冲突时，为了让某个规则强制有效可以使用 !important。
+
+```html
+<style>
+  h2 {
+ 	 color: red !important;
+  }
+
+  h2 {
+ 	 color: green;
+  }
+</style>
+
+<h2>HDCMS</h2>
+```
+
+### 继承规则
+
+子元素可以继承父元素设置的样式。
+
+- 子元素并不是全部样式。比如边框、高度等并不会继承。
+- 继承的规则没有权重
+
+### 通配符
+
+在开发中使用`*` 选择器会有一个问题。因为通配符的权限为0，而继承的规则没有权重，看以下代码产生的问题。
+
+```html
+<style>
+  * {
+  	color: red;
+  }
+
+  h2 {
+  	color: blue;
+  }
+</style>
+
+<article>
+	<h2>hdcms <span>内容管理系统</span></h2>
+</article>
+```
+
+`h2` 中的span并没有继承 `h2` 的颜色，就是因为继承没有权重。而使用了 `*` 权重为0的规则。
+
+https://www.w3cschool.cn/css/dict
+
+### 布局
+
+#### 浮动
+
+#### 定位
+
+#### 显示
+
+#### 盒模型
+
+#### 网格布局
+
+#### 弹性布局
 
 
 
