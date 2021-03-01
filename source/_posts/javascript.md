@@ -56,6 +56,82 @@ let myVar = 1; //声明的同时赋值
 | Array   | 数组   | let myVar = [1,"ds",2];          |
 | Object  | 对象   | let myVar = {name: "xx",age: 18} |
 
+### 类型检查
+
+#### typeof
+
+返回原始类型
+
+- Number/string/boolean
+- function
+- object
+- undefined
+
+#### Instanceof
+
+**`instanceof`** 运算符用于检测构造函数的 `prototype` 属性是否出现在某个实例对象的原型链上。
+
+```
+let hd = [];
+let houdunren = {};
+console.log(hd instanceof Array); //true
+console.log(houdunren instanceof Array); //false
+```
+
+### 隐式转换
+
+基本上所有类型都可以隐式转换为Boolean类型。
+
+| 数据类型  | true           | false            |
+| --------- | -------------- | ---------------- |
+| String    | 非空字符串     | 空字符串         |
+| Number    | 非0的数值      | 0、NaN           |
+| Array     | 数组不参与比较 | 参与比较的空数组 |
+| Object    | 所有对象       |                  |
+| undefined | 无             | undefined        |
+| null      | 无             | null             |
+| NaN       | 无             | NaN              |
+
+### String
+
+```
+let a = new String("xxx");
+
+let a = "xxx";
+
+a.length	// 获取字符串的长度
+
+a.toString()	//获取字符串
+
+"Are" + " you" +"OK?" // 拼接字符串
+
+a += "1234" // 在字符串上追加
+
+function show(title) {
+	return `xxx`;
+}
+console.log(`${show()}`)
+
+a.toUpperCase // 全部转换为答谢
+
+a.toLowerCase	// 全部转换为小写
+
+a.trim()	//删除字符串左右的空白字符
+
+a.trimLeft() //删除字符串的左边的空白
+
+a.trimRight() //删除字符串右边的空白
+ 
+a.charAt(3) // 通过index获取字符串中的字符
+
+a[3] //通过下标也可以直接获取字符
+
+```
+
+
+
+
+
 ## JavaScript中函数定义方式
 
 函数声明
