@@ -126,6 +126,97 @@ a.charAt(3) // 通过index获取字符串中的字符
 
 a[3] //通过下标也可以直接获取字符
 
+// 截取字符串
+let a = "zhongguoren";
+
+console.log(a.slice(3)); // 获取index 3 之后的所有字符
+console.log(a.slice(3,6));  //左闭右开, 获取index 3,4,5 字符
+console.log(a.slice(3,-1)); // 获取index 3 到 index =1(表示最后一个字符的index) ，3之后的所有字符
+console.log(a.slice(-2)); // 获取index -2 -1 ，最后两个字符
+
+
+console.log(a.substring(3));  //左闭右开
+console.log(a.substring(3,6));  //左闭右开, 获取index 3,4,5 字符
+console.log(a.substring(3,-9)); // 将-9 转换为0， 相当于a.substring(3,0)
+
+
+console.log(a.substr(3,0)) // 相当于a.substr(0,3)
+console.log(a.substr(3,6));  // 从index 往后获取6位
+console.log(a.substr(-3,2)); // 获取-3，-2 
+
+// 查找字符串
+console.log(a.indexOf("o")); // 查找字符串中第一个遇到o字符的位置
+console.log(a.indexOf("o",3)); //从index 3之后开始找第一个遇到的0字符的位置 
+
+console.log(a.lastIndexOf("o")); //逆向查找
+console.log(a.lastIndexOf("o",7)); //从第index 7字符向前搜索
+
+
+console.log(a.search("ren"));
+console.log(a.search(/\.ren/i));
+
+
+console.log(a.includes("ren")); // 判断是否包含子字符串
+console.log(a.includes("ren", 5)); //从指定index 位置开始查询
+
+
+console.log(a.startsWith("z")); //从第一个字符开始匹配，一旦有字符串不匹配返回false，否则返回true
+console.log(a.startsWith("h",1)); // 指定从第几个index 开始匹配
+
+console.log(a.endsWith("n")); //从最后一个字符开始往前匹配，不匹配返回false，否则返回true
+console.log(a.endsWith("e", 10));
+
+//替换字符串
+let c = a.replace("zhongguo","jiangsu")
+console.log(c);
+
+// console.log(str.replace(/\//g, "-")); 可以使用正则表达式
+
+// 重复生成
+console.log("*".repeat(3));
+
+// 分割字母
+console.log(a.split("")); //将字符串转换成一个个字符，放在数组中
+
+//将字符串转换为数组
+console.log("1,2,3".split(",")) //[1,2,3]
+
+let d = 11 + "10";
+console.log(typeof d,d); //将Number转换成字符串再进行拼接
+```
+
+### Number
+
+```
+let a = new Number(3);
+
+let a = 100;
+
+//判断是否是整数
+Number.isInteger(11);
+
+//指定返回的小数位数可以四舍五入
+(21.212).toFixed(2); //21.21
+
+//提取字符串开始去除空白后的数字转为整数。
+parseInt("  123dsds") // 123
+parseInt("123.11"); 123
+
+//转换字符串Wie浮点数，忽略字符串空白字符
+console.log(parseFloat(" 11dsds")); 99
+console.log(parseFloat("121.21")); 121.21
+
+
+```
+
+#### NaN
+
+> 无效的数值
+
+```
+Number("dsjkds"); //NaN
+
+Number.isNaN()	// 判断是否是NaN
 ```
 
 
