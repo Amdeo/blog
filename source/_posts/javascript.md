@@ -19,7 +19,7 @@ JavaScript的标准是ECMAScript。截止2012年，所有的现代浏览器都�
 
 内嵌脚本，使用`script标签`嵌入javascript代码
 
-```
+```html
 <script>
 	alert('xxx');
 </script>
@@ -29,7 +29,7 @@ JavaScript的标准是ECMAScript。截止2012年，所有的现代浏览器都�
 
 > 引用外部文件时，不要在当前标签中嵌入JavaScript代码。
 
-```
+```html
 <script src="index.js"></script>
 ```
 
@@ -92,40 +92,73 @@ console.log(houdunren instanceof Array); //false
 | null      | 无             | null             |
 | NaN       | 无             | NaN              |
 
-### String
+### String(字符串)
+
+#### 字符串创建
+
+```javascript
+let a = new String("xxx");
+let a = "xxx";
+```
+
+#### 获取字符串长度
+
+```javascript
+console.log(a.length);
+```
+
+#### 拼接字符串
 
 ```
-let a = new String("xxx");
-
-let a = "xxx";
-
-a.length	// 获取字符串的长度
-
-a.toString()	//获取字符串
-
 "Are" + " you" +"OK?" // 拼接字符串
 
 a += "1234" // 在字符串上追加
 
+let d = 11 + "10";
+console.log(typeof d,d); //将Number转换成字符串再进行拼接
+```
+
+#### 获取字符串
+
+```javascript
+console.log(a.toString())	//获取字符串
+
 function show(title) {
 	return `xxx`;
 }
-console.log(`${show()}`)
 
+console.log(`${show()}`)
+```
+
+#### 字符串大小写转换
+
+```javascript
 a.toUpperCase // 全部转换为答谢
 
 a.toLowerCase	// 全部转换为小写
+```
 
+#### 去除字符串中的空白
+
+```javascript
 a.trim()	//删除字符串左右的空白字符
 
 a.trimLeft() //删除字符串的左边的空白
 
 a.trimRight() //删除字符串右边的空白
- 
+```
+
+#### 获取字符串中的字符
+
+```javascript
 a.charAt(3) // 通过index获取字符串中的字符
 
 a[3] //通过下标也可以直接获取字符
+```
 
+#### 字符串截取
+
+```javascript
 // 截取字符串
 let a = "zhongguoren";
 
@@ -134,16 +167,18 @@ console.log(a.slice(3,6));  //左闭右开, 获取index 3,4,5 字符
 console.log(a.slice(3,-1)); // 获取index 3 到 index =1(表示最后一个字符的index) ，3之后的所有字符
 console.log(a.slice(-2)); // 获取index -2 -1 ，最后两个字符
 
-
 console.log(a.substring(3));  //左闭右开
 console.log(a.substring(3,6));  //左闭右开, 获取index 3,4,5 字符
 console.log(a.substring(3,-9)); // 将-9 转换为0， 相当于a.substring(3,0)
 
-
 console.log(a.substr(3,0)) // 相当于a.substr(0,3)
 console.log(a.substr(3,6));  // 从index 往后获取6位
 console.log(a.substr(-3,2)); // 获取-3，-2 
+```
 
+#### 查找字符串
+
+```javascript
 // 查找字符串
 console.log(a.indexOf("o")); // 查找字符串中第一个遇到o字符的位置
 console.log(a.indexOf("o",3)); //从index 3之后开始找第一个遇到的0字符的位置 
@@ -165,60 +200,94 @@ console.log(a.startsWith("h",1)); // 指定从第几个index 开始匹配
 
 console.log(a.endsWith("n")); //从最后一个字符开始往前匹配，不匹配返回false，否则返回true
 console.log(a.endsWith("e", 10));
+```
 
+#### 替换字符串
+
+```javascript
 //替换字符串
 let c = a.replace("zhongguo","jiangsu")
 console.log(c);
 
 // console.log(str.replace(/\//g, "-")); 可以使用正则表达式
+```
 
-// 重复生成
+#### 重复生成
+
+```
 console.log("*".repeat(3));
+```
 
-// 分割字母
+#### 分割字母
+
+```
 console.log(a.split("")); //将字符串转换成一个个字符，放在数组中
+```
 
-//将字符串转换为数组
+#### 字符串转换为数组
+
+```
 console.log("1,2,3".split(",")) //[1,2,3]
-
-let d = 11 + "10";
-console.log(typeof d,d); //将Number转换成字符串再进行拼接
 ```
 
-### Number
+### Number(数值)
 
-```
+#### 创建Number
+
+```javascript
 let a = new Number(3);
 
 let a = 100;
+```
 
+#### 判断是否数组
+
+```javascript
 //判断是否是整数
 Number.isInteger(11);
+```
 
-//指定返回的小数位数可以四舍五入
+#### 指定返回的小数位数可以四舍五入
+
+```javascript
 (21.212).toFixed(2); //21.21
+```
 
-//提取字符串开始去除空白后的数字转为整数。
+#### 提取字符串开始去除空白后的数字转为整数
+
+```javascript
 parseInt("  123dsds") // 123
 parseInt("123.11"); 123
+```
 
-//转换字符串Wie浮点数，忽略字符串空白字符
+#### 转换字符串为浮点数，忽略字符串空白字符
+
+```javascript
 console.log(parseFloat(" 11dsds")); 99
 console.log(parseFloat("121.21")); 121.21
+```
 
-//获取最大值、最小值
+#### 获取最大值、最小值
+
+```javascript
 console.log(Math.min(1,2,3));
 console.log(Math.max(1,2,3));
 console.log(Math.max.apple(Math,[1,2,3])); 
+```
 
-//舍入处理
+#### 舍入处理
+
+```javascript
 console.log(Math.ceil(1.111));	// 向上取整
 
 console.log(Math.floor(1.555));	// 向下取整
 
 console.log(Math.round(1.5));	// 四舍五入处理
+```
 
-//随机数
+#### 随机数
+
+```javascript
 const number = Math.floor(Math.random() * 5);	//0~5的随机数，不包括5
 console.log(number);
 
@@ -241,18 +310,16 @@ let stus = ['小明', '张三', '王五', '爱情'];
 let pos = Math.floor(Math.random() * stus.length);
 console.log(stus[pos]);
 
-//
 let stus = ['小明', '张三', '王五', '爱情'];
 let pos = Math.floor(Math.random() * (3-1)) + 1;
 console.log(stus[pos]);
-
 ```
 
 #### NaN
 
 > 无效的数值
 
-```
+```javascript
 Number("dsjkds"); //NaN
 
 Number.isNaN()	// 判断是否是NaN
@@ -262,14 +329,14 @@ Number.isNaN()	// 判断是否是NaN
 
 大部分变成语言在浮点数计算是都会有精度误差问题
 
-```
+```javascript
 let hd = 0.1 + 0.2
 console.log(hd)// 结果：0.30000000000000004
 ```
 
 处理方式
 
-```
+```javascript
 console.log((0.1 + 0.2).toFixed(2)) //0.3
 
 console.log(1.0 - 0.9) //0.09999999999999998
@@ -278,7 +345,7 @@ console.log((1.0 - 0.9).toFixed(2)) //0.10
 
 将小数转为整数进行计算后，再转为小数也可以解决精度问题
 
-```
+```javascript
 Number.prototype.add = function (num) {
 	//取两个数值中小数位最大的
   let n1 = this.toString().split('.')[1].length
@@ -296,7 +363,7 @@ console.log((0.1).add(0.2))
 
 市面上已经存在很多针对数学计算的库 [mathjs](https://mathjs.org/examples/browser/basic_usage.html.html)、[decimal.js](http://mikemcl.github.io/decimal.js)等，我们就不需要自己构建了。下面来演示使用 [decimal.js](http://mikemcl.github.io/decimal.js)进行浮点计算。
 
-```
+```html
 <script src="https://cdn.bootcss.com/decimal.js/10.2.0/decimal.min.js"></script>
 
 <script>
@@ -308,7 +375,7 @@ console.log((0.1).add(0.2))
 
 网站中处理时间是很常用的功能，通过Date类型提供的丰富功能可以非常方便的操作
 
-```
+```javascript
 let now = new Date();
 console.log(now);
 console.log(typeof date); //object
@@ -322,9 +389,9 @@ console.log(typeof Date()); //string
 console.log(Date.now());
 ```
 
-计算脚本执行时间
+##### 计算脚本执行时间
 
-```
+```javascript
 const start = Date.now();
 for (let i = 0; i < 2000000; i++) {}
 const end = Date.now();
@@ -333,7 +400,7 @@ console.log(end - start);
 
 当前也可以使用控制台测试
 
-```
+```javascript
 console.time("testFor");
 for (let i = 0; i < 20000000; i++) {}
 console.timeEnd("testFor");
@@ -341,7 +408,7 @@ console.timeEnd("testFor");
 
 根据指定的日期与时间定义日期对象
 
-```
+```javascript
 let now = new Date('2028-02-22 03:25:02');
 console.log(now);
 
@@ -351,7 +418,7 @@ console.log(now);
 
 使用展示运算符处理更方便
 
-```
+```javascript
 let info = [2020, 2, 20, 10, 15, 32];
 let date = new Date(...info);
 console.dir(date);
@@ -361,7 +428,7 @@ console.dir(date);
 
 将日期转为数值类型就是转为时间戳单位是毫秒
 
-```
+```javascript
 let hd = new Date("2020-2-22 10:33:12");
 console.log(hd * 1);
 
@@ -374,7 +441,7 @@ console.log(date.getTime());
 
 将时间戳转换为标准日期的方法
 
-```
+```javascript
 const param = [1990, 2, 22, 13, 22, 19];
 const date = new Date(...param);
 const timestamp = date.getTime();
@@ -384,7 +451,7 @@ console.log(new Date(timestamp));
 
 对象方法
 
-```
+```javascript
 //格式化输出日期
 let time = new Date();
 console.log(
@@ -394,7 +461,7 @@ console.log(
 
 封装函数用于复用
 
-```
+```javascript
 function dateFormat(date, format = "YYYY-MM-DD HH:mm:ss") {
   const config = {
     YYYY: date.getFullYear(),
@@ -427,7 +494,7 @@ new Array(1,2,3);
 
 const array = ["ds","ddd"]
 
-const array = [["hdcms"], ["houdunren"]];
+const array = [["hdcms"], ["1111"]];
 ```
 
 方法
@@ -451,7 +518,7 @@ console.log(hd);
 类型检测
 
 ```
-Array.isArray([1,"后盾人","hdcms"]);
+Array.isArray([1,"111","hdcms"]);
 Array.isArray(9);
 ```
 
@@ -477,21 +544,21 @@ console.log(String([1,2,3]))
 
 
 
-#### Array.from
+Array.from
 
-使用Array.from 可将类数组转换为数组，类数组指包含length 属性或可迭代的对象
+使用`Array.from` 可将类数组转换为数组，类数组指包含length 属性或可迭代的对象
 
 - 第一个参数为要转换为数据，第二个参数为类似于map函数的回调
 
 
-```
+```javascript
 let str = 'xxx';
 console.log(Array.from(str)); //["x", "x", "x"]
 ```
 
 #### 数组合并
 
-```
+```javascript
 let a = [1, 2, 3];
 let b = ['a', 'xx', ...a];
 console.log(b); //["a", "xx", 1, 2, 3]
@@ -510,51 +577,462 @@ hd("xx", 1, 2, 3);
 
 #### 解构赋值
 
-```
+```javascript
 let [name,url] = ["xx","123"];
 console.log(name);
 
 function hd() {
-	return ['houdunren', 'hdcms'];
+	return ['1111', 'hdcms'];
 }
 let [a, b] = hd();
 console.log(a); //houdunren
 
-let [a, ...b] = ['xx', 'houdunren', 'hdcms'];
+let [a, ...b] = ['xx', '1111', 'hdcms'];
 console.log(b);
 
 let web = "后盾人";
-[web, url] = ["hdcms.com", "houdunren.com"];
+[web, url] = ["111.com", "111.com"];
 console.log(web);
 ```
 
 字符串解构
 
-```
-const [...a] = "houdunren.com";
+```javascript
+const [...a] = "111.com";
 console.log(a); //Array(13)
 ```
 
-```
-let [,url]=['后盾人','houdunren.com'];
+```javascript
+let [,url]=['后盾人','111.com'];
 console.log(url);//houdunren.com
 
-let [name, ...arr] = ['后盾人', 'hdcms', 'houdunren.com'];
+let [name, ...arr] = ['后盾人', '111', '111.com'];
 console.log(name, arr); //后盾人 (2) ["hdcms", "houdunren.com"]
 ```
 
 数组参数
 
-```
+```javascript
 function hd([a, b]) {
 	console.log(a, b);
 }
-hd(['后盾人', 'hdcms']);
+hd(['111', '111']);
+```
+
+#### 修改数组
+
+```javascript
+let arr = [1,"xx","123"];
+
+arr[1] = "222";
+
+// 向数组追加元素
+arr[arr.length] = "333";
+console.log(arr);
+```
+
+#### 批量添加元素
+
+```
+let a = [1,2,3];
+
+let b = ["123"];
+
+b.push(...a);
+console.log(b);
+
+b.push('444','555');
+```
+
+#### 根据区间创建新数组
+
+```javascript
+function rangeArray(begin, end) {
+  const array = [];
+  for (let i = begin; i <= end; i++) {
+    array.push(i);
+  }
+  return array;
+}
+console.log(rangeArray(1, 6));
+```
+
+#### 从末尾弹出元素
+
+```javascript
+let arr = ["1","2"];
+arr.pop();
+```
+
+#### 从数组前面去除一个元素
+
+```javascript
+arr.shift();
+```
+
+#### 从数组前面添加元素
+
+```javascript
+arr.unshift();
+```
+
+#### 填充数组元素
+
+```javascript
+console.dir(Array(4).fill("111"));
+```
+
+指定填充位置
+
+```javascript
+console.log([1, 2, 3, 4].fill("1", 1, 2));
+```
+
+#### 数组截取
+
+```javascript
+let arr = [0, 1, 2, 3, 4, 5, 6];
+console.log(arr.slice(1, 3)); // [1,2]
+
+let arr = [0, 1, 2, 3, 4, 5, 6];
+console.log(arr.slice()); //[0, 1, 2, 3, 4, 5, 6]
+```
+
+#### 添加、删除、替换
+
+```javascript
+let arr = [0, 1, 2, 3, 4, 5, 6];
+console.log(arr.splice(1, 3)); //返回删除的元素 [1, 2, 3] 
+console.log(arr); //删除数据后的原数组 [0, 4, 5, 6]
+```
+
+通过修改length删除最后一个元素
+
+```javascript
+let arr = ["123", "234"];
+arr.length = arr.length - 1;
+console.log(arr);
+```
+
+通过制定第三个参数来设置在删除位置添加的元素
+
+```javascript
+let arr = [0, 1, 2, 3, 4, 5, 6];
+console.log(arr.splice(1, 3, '123', '123')); 
+console.log(arr);
+
+//向末尾添加元素
+console.log(arr.splice(arr.length,0,"222","333"));
+console.log(arr);
+
+//向数组前添加元素
+console.log(arr.splice(0, 0, '123', '234'));
+
+//数组元素位置调整函数
+function move(array, before, to) {
+  if (before < 0 || to >= array.length) {
+    console.error("指定位置错误");
+    return;
+  }
+  const newArray = [...array];
+  const elem = newArray.splice(before, 1);
+  newArray.splice(to, 0, ...elem);
+  return newArray;
+}
+const array = [1, 2, 3, 4];
+console.table(move(array, 0, 3));
+```
+
+#### 清空数组
+
+```javascript
+let user = [{ name: "111" }, { name: "222" }];
+
+// 方法一
+user = [];
+
+// 方法二
+user.length = 0;
+
+// 方法三
+user.splice(0, user.length);
+
+// 方法死
+while (user.pop()) {}
+```
+
+#### 合并拆分
+
+```javascript
+let arr = [1, "111", "222"];
+console.log(arr.join('-'));
+
+let price = "99,78,68";
+console.log(price.split(",")); //["99", "78", "68"]
+
+let array = ["111", "222"];
+let hd = [1, 2];
+let cms = [3, 4];
+console.log(array.concat(hd, cms)); //["111", "222", 1, 2, 3, 4]
+
+console.log([...array, ...hd, ...cms]);
+```
+
+##### copyWithin 从数组中赋值一部分到同数组中的另外位置
+
+```javascript
+const arr = [1, 2, 3, 4];
+console.log(arr.copyWithin(2, 0, 2)); //[1, 2, 1, 2]
+```
+
+#### 查找元素
+
+##### indexOf
+
+> 从前向后查找元素出现的位置，如果找不到返回-1
+
+```javascript
+let arr = [7, 3, 2, 8, 2, 6];
+console.log(arr.indexOf(2)); // 2 从前面查找2出现的位置
+
+let arr = [7, 3, 2, '8', 2, 6];
+console.log(arr.indexOf(8)); // -1
+
+let arr = [7, 3, 2, 8, 2, 6];
+//从第二个元素开始向后查找
+console.log(arr.indexOf(2, 3)); //4
+```
+
+##### lastIndexOf
+
+> 从后向前查找元素出现的位置
+
+```javascript
+let arr = [7, 3, 2, 8, 2, 6];
+console.log(arr.lastIndexOf(2)); // 4 从后查找2出现的位置
+```
+
+第二个参数用于指定开始位置
+
+```javascript
+let arr = [7, 3, 2, 8, 2, 6];
+//从第五个元素向前查找
+console.log(arr.lastIndexOf(2, 5));
+
+//从最后一个字符向前查找
+console.log(arr.lastIndexOf(2, -2));
+```
+
+##### includes
+
+>查找字符串返回值是布尔类型更方便判断
+
+```javascript
+let arr = [7, 3, 2, 6];
+console.log(arr.includes(6)); //true
+```
+
+##### find
+
+> find 方法找到后会把值返回出来
+
+```javascript
+let arr = ["1", "2", "3"];
+
+let find = arr.find(function(item) {
+  return item == "1";
+});
+
+console.log(find); //1
+
+// 不能查找引用类型
+const user = [{ name: "李四" }, { name: "张三" }, { name: "后盾人" }];
+const find = user.includes({ name: "后盾人" });
+console.log(find);
+
+// 可以方便的查找引用类型
+const user = [{ name: "李四" }, { name: "张三" }, { name: "后盾人" }];
+const find = user.find(user => (user.name = "后盾人"));
+console.log(find);
+```
+
+##### findIndex
+
+> 返回索引值
+
+```javascript
+let arr = [7, 3, 2, '8', 2, 6];
+
+console.log(arr.findIndex(function (v) {
+	return v == 8;
+})); //3
+```
+
+#### reverse 数组逆序
+
+```javascript
+let arr = [1, 4, 2, 9];
+console.log(arr.reverse()); //[9, 2, 4, 1]
+```
+
+#### sort
+
+```javascript
+let arr = [1, 4, 2, 9];
+console.log(arr.sort()); //[1, 2, 4, 9]
+
+let arr = [1, 4, 2, 9];
+
+console.log(arr.sort(function (v1, v2) {
+	return v2 - v1;
+})); //[9, 4, 2, 1]
+
+let lessons = [
+  { title: "媒体查询响应式布局", click: 78 },
+  { title: "FLEX 弹性盒模型", click: 12 },
+  { title: "MYSQL多表查询随意操作", click: 99 }
+];
+
+let sortLessons = lessons.sort((v1, v2) => v2.click - v1.click);
+console.log(sortLessons);
+```
+
+#### 获取数组所有键
+
+```javascript
+const arr = ["a", "b", "c", "后盾人"];
+
+for (const key of arr.keys()) {
+  console.log(key);
+}
+```
+
+#### 递归检测元素every
+
+> 要所有元素操作都要返回真结果才为真。相当于 "与"
+
+```javascript
+const user = [
+  { name: "李四", js: 89 },
+  { name: "马六", js: 55 },
+  { name: "张三", js: 78 }
+];
+const resust = user.every(user => user.js >= 60);
+console.log(resust);
+```
+
+#### some
+
+> 如果有一个返回true，表达式结果就是真。 相当于 "或"
+
+```
+let words = ['1', '2', '3'];
+let title = '1234567'
+
+let state = words.some(function (item, index, array) {
+	return title.indexOf(item) >= 0;
+});
+
+if (state) console.log('标题含有违规关键词');
+```
+
+#### filter
+
+> 以过滤数据中元素
+
+```javascript
+let lessons = [
+  {title: '媒体查询响应式布局',category: 'css'},
+  {title: 'FLEX 弹性盒模型',category: 'css'},
+  {title: 'MYSQL多表查询随意操作',category: 'mysql'}
+];
+
+let cssLessons = lessons.filter(function (item, index, array) {
+  if (item.category.toLowerCase() == 'css') {
+    return true;
+  }
+});
+
+console.log(cssLessons);
+```
+
+#### map
+
+```javascript
+let lessons = [
+  {title: '媒体查询响应式布局',category: 'css'},
+  {title: 'FLEX 弹性盒模型',category: 'css'},
+  {title: 'MYSQL多表查询随意操作',category: 'mysql'}
+];
+
+console.log(lessons.map(item => item.title));
+
+lessons = lessons.map(function (item, index, array) {
+    item.title = `[后盾人] ${item['title']}`;
+    return item;
+});
+console.log(lessons);
+```
+
+#### reduce
+
+```javascript
+function countArrayELem(array, elem) {
+  return array.reduce((total, cur) => (total += cur == elem ? 1 : 0), 0);
+}
+
+let numbers = [1, 2, 3, 1, 5];
+console.log(countArrayELem(numbers, 1)); //2
+
+function arrayMax(array) {
+  return array.reduce(
+  	(max, elem) => (max > elem ? max : elem), array[0]
+  );
+}
+
+console.log(arrayMax([1, 3, 2, 9]));
+
+// 取价格最高的商品
+let cart = [
+  { name: "iphone", price: 12000 },
+  { name: "imac", price: 25000 },
+  { name: "ipad", price: 3600 }
+];
+
+function maxPrice(array) {
+  return array.reduce(
+    (goods, elem) => (goods.price > elem.price ? goods : elem),
+    array[0]
+  );
+}
+console.log(maxPrice(cart));
+
+// 计算购物车中的商品总价
+let cart = [
+  { name: "iphone", price: 12000 },
+  { name: "imac", price: 25000 },
+  { name: "ipad", price: 3600 }
+];
+
+const total = cart.reduce(
+	(total, goods) => total += goods.price, 0
+);
+console.log(total); //40600
+
+//去重
+let arr = [1, 2, 6, 2, 1];
+let filterArr = arr.reduce((pre, cur, index, array) => {
+  if (pre.includes(cur) === false) {
+      pre = [...pre, cur];
+  }
+  return pre;
+}, [])
+console.log(filterArr); // [1,2,6]
 ```
 
 #### 循环
 
-```
+```javascript
 lessons.forEach((item, index, array) => {
     item.title = item.title.substr(0, 5);
 });let a = [1,2,3,4,5];
@@ -564,23 +1042,14 @@ for (let i = 0; i < a.length; ++i) {
 	a[i] = 1;
 }
 
+a.forEach((item, index, array) => {});
 
-a.forEach((item, index, array) => {
-
-});
-
-for (const key in a) {
-    
-}
+for (const key in a) {}
 
 for (const item of a) {}
 
 for (const [key, value] of a.entries()) {}
 ```
-
-
-
-
 
 ## JavaScript中函数定义方式
 
