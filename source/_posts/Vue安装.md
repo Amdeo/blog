@@ -1,5 +1,5 @@
 ---
-title: Vue安装
+title: Vue
 date: 2019-12-05 23:21:31
 tags: [前端,vue,框架]
 categories: Vue
@@ -123,4 +123,8 @@ npm install
 ```shell
 npm run dev
 ```
+
+Vue样式绑定
+
+
 

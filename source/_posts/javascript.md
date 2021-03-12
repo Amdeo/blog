@@ -206,6 +206,45 @@ parseInt("123.11"); 123
 console.log(parseFloat(" 11dsds")); 99
 console.log(parseFloat("121.21")); 121.21
 
+//获取最大值、最小值
+console.log(Math.min(1,2,3));
+console.log(Math.max(1,2,3));
+console.log(Math.max.apple(Math,[1,2,3])); 
+
+//舍入处理
+console.log(Math.ceil(1.111));	// 向上取整
+
+console.log(Math.floor(1.555));	// 向下取整
+
+console.log(Math.round(1.5));	// 四舍五入处理
+
+//随机数
+const number = Math.floor(Math.random() * 5);	//0~5的随机数，不包括5
+console.log(number);
+
+const number = Math.floor(Math.random() * (5+1));	//返回0~5的随机数，包括5
+console.log(number);
+
+const number = Math.floor(Math.random() * (5 - 2)) + 2;
+console.log(number);
+
+//下面取2~5的随机数（不包括5）
+const number = Math.floor(Math.random() * (5 - 2)) + 2;
+console.log(number);
+
+//下面取2~5的随机数
+const number = Math.floor(Math.random() * (5 - 2 + 1)) + 2;
+console.log(number);
+
+//随机点名
+let stus = ['小明', '张三', '王五', '爱情'];
+let pos = Math.floor(Math.random() * stus.length);
+console.log(stus[pos]);
+
+//
+let stus = ['小明', '张三', '王五', '爱情'];
+let pos = Math.floor(Math.random() * (3-1)) + 1;
+console.log(stus[pos]);
 
 ```
 
@@ -217,6 +256,326 @@ console.log(parseFloat("121.21")); 121.21
 Number("dsjkds"); //NaN
 
 Number.isNaN()	// 判断是否是NaN
+```
+
+#### 浮点精度处理
+
+大部分变成语言在浮点数计算是都会有精度误差问题
+
+```
+let hd = 0.1 + 0.2
+console.log(hd)// 结果：0.30000000000000004
+```
+
+处理方式
+
+```
+console.log((0.1 + 0.2).toFixed(2)) //0.3
+
+console.log(1.0 - 0.9) //0.09999999999999998
+console.log((1.0 - 0.9).toFixed(2)) //0.10
+```
+
+将小数转为整数进行计算后，再转为小数也可以解决精度问题
+
+```
+Number.prototype.add = function (num) {
+	//取两个数值中小数位最大的
+  let n1 = this.toString().split('.')[1].length
+  let n2 = num.toString().split('.')[1].length
+  
+  //得到10的N次幂
+  let m = Math.pow(10, Math.max(n1, n2))
+
+  return (this * m + num * m) / m
+}
+console.log((0.1).add(0.2))
+```
+
+**推荐做法**
+
+市面上已经存在很多针对数学计算的库 [mathjs](https://mathjs.org/examples/browser/basic_usage.html.html)、[decimal.js](http://mikemcl.github.io/decimal.js)等，我们就不需要自己构建了。下面来演示使用 [decimal.js](http://mikemcl.github.io/decimal.js)进行浮点计算。
+
+```
+<script src="https://cdn.bootcss.com/decimal.js/10.2.0/decimal.min.js"></script>
+
+<script>
+	console.log(Decimal.add(0.1, 0.2).valueOf())
+</script>
+```
+
+#### Date
+
+网站中处理时间是很常用的功能，通过Date类型提供的丰富功能可以非常方便的操作
+
+```
+let now = new Date();
+console.log(now);
+console.log(typeof date); //object
+console.log(now * 1); //获取时间戳
+
+//直接使用函数获取当前时间
+console.log(Date());
+console.log(typeof Date()); //string
+
+//获取当前时间戳单位毫秒
+console.log(Date.now());
+```
+
+计算脚本执行时间
+
+```
+const start = Date.now();
+for (let i = 0; i < 2000000; i++) {}
+const end = Date.now();
+console.log(end - start);
+```
+
+当前也可以使用控制台测试
+
+```
+console.time("testFor");
+for (let i = 0; i < 20000000; i++) {}
+console.timeEnd("testFor");
+```
+
+根据指定的日期与时间定义日期对象
+
+```
+let now = new Date('2028-02-22 03:25:02');
+console.log(now);
+
+now = new Date(2028, 4, 5, 1, 22, 16);
+console.log(now);
+```
+
+使用展示运算符处理更方便
+
+```
+let info = [2020, 2, 20, 10, 15, 32];
+let date = new Date(...info);
+console.dir(date);
+```
+
+类型转换
+
+将日期转为数值类型就是转为时间戳单位是毫秒
+
+```
+let hd = new Date("2020-2-22 10:33:12");
+console.log(hd * 1);
+
+console.log(Number(hd));
+
+console.log(hd.valueOf())
+
+console.log(date.getTime());
+```
+
+将时间戳转换为标准日期的方法
+
+```
+const param = [1990, 2, 22, 13, 22, 19];
+const date = new Date(...param);
+const timestamp = date.getTime();
+console.log(timestamp);
+console.log(new Date(timestamp));
+```
+
+对象方法
+
+```
+//格式化输出日期
+let time = new Date();
+console.log(
+  `${time.getFullYear()}-${time.getMonth()}-${time.getDate()} ${time.getHours()}:${time.getMinutes()}:${time.getSeconds()}`
+);
+```
+
+封装函数用于复用
+
+```
+function dateFormat(date, format = "YYYY-MM-DD HH:mm:ss") {
+  const config = {
+    YYYY: date.getFullYear(),
+    MM: date.getMonth() + 1,
+    DD: date.getDate(),
+    HH: date.getHours(),
+    mm: date.getMinutes(),
+    ss: date.getSeconds()
+  };
+  for (const key in config) {
+    format = format.replace(key, config[key]);
+  }
+  return format;
+}
+console.log(dateFormat(new Date(), "YYYY年MM月DD日"));
+```
+
+下面是系统提供的日期时间方法，更多方法请查看 [MDN官网](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Date)
+
+#### moment.js
+
+Moment.js是一个轻量级的JavaScript时间库，它方便了日常开发中对时间的操作，提高了开发效率。
+
+### 数组类型
+
+创建数组
+
+```
+new Array(1,2,3);
+
+const array = ["ds","ddd"]
+
+const array = [["hdcms"], ["houdunren"]];
+```
+
+方法
+
+```
+const array = ["ds","ddd"];
+
+array.length;
+```
+
+Array.of
+
+```
+let hd = Array.of(3);
+console.log(hd);
+
+hd = Array.of(1,2,3);
+console.log(hd);
+```
+
+类型检测
+
+```
+Array.isArray([1,"后盾人","hdcms"]);
+Array.isArray(9);
+```
+
+字符串
+
+ 大部分数据类型都可以使用，.toString() 函数转换为字符串
+
+```
+console.log(([1, 2, 3]).toString()); // 1,2,3
+```
+
+也可以使用函数String转换为字符串
+
+```
+console.log(String([1,2,3]))
+```
+
+或使用join连接字符串
+
+```
+[1,2,3].join("-");
+```
+
+
+
+#### Array.from
+
+使用Array.from 可将类数组转换为数组，类数组指包含length 属性或可迭代的对象
+
+- 第一个参数为要转换为数据，第二个参数为类似于map函数的回调
+
+
+```
+let str = 'xxx';
+console.log(Array.from(str)); //["x", "x", "x"]
+```
+
+#### 数组合并
+
+```
+let a = [1, 2, 3];
+let b = ['a', 'xx', ...a];
+console.log(b); //["a", "xx", 1, 2, 3]
+
+
+function hd(...args) {
+  console.log(args);
+}
+hd(1, 2, 3, "xx"); //[1, 2, 3, "xx"]
+
+function hd(site, ...args) {
+  console.log(site, args); //xx (3) [1, 2, 3]
+}
+hd("xx", 1, 2, 3);
+```
+
+#### 解构赋值
+
+```
+let [name,url] = ["xx","123"];
+console.log(name);
+
+function hd() {
+	return ['houdunren', 'hdcms'];
+}
+let [a, b] = hd();
+console.log(a); //houdunren
+
+let [a, ...b] = ['xx', 'houdunren', 'hdcms'];
+console.log(b);
+
+let web = "后盾人";
+[web, url] = ["hdcms.com", "houdunren.com"];
+console.log(web);
+```
+
+字符串解构
+
+```
+const [...a] = "houdunren.com";
+console.log(a); //Array(13)
+```
+
+```
+let [,url]=['后盾人','houdunren.com'];
+console.log(url);//houdunren.com
+
+let [name, ...arr] = ['后盾人', 'hdcms', 'houdunren.com'];
+console.log(name, arr); //后盾人 (2) ["hdcms", "houdunren.com"]
+```
+
+数组参数
+
+```
+function hd([a, b]) {
+	console.log(a, b);
+}
+hd(['后盾人', 'hdcms']);
+```
+
+#### 循环
+
+```
+lessons.forEach((item, index, array) => {
+    item.title = item.title.substr(0, 5);
+});let a = [1,2,3,4,5];
+
+for (let i = 0; i < a.length; ++i) {
+	console.log(a[i]);
+	a[i] = 1;
+}
+
+
+a.forEach((item, index, array) => {
+
+});
+
+for (const key in a) {
+    
+}
+
+for (const item of a) {}
+
+for (const [key, value] of a.entries()) {}
 ```
 
 
