@@ -485,7 +485,7 @@ console.log(dateFormat(new Date(), "YYYY年MM月DD日"));
 
 Moment.js是一个轻量级的JavaScript时间库，它方便了日常开发中对时间的操作，提高了开发效率。
 
-### 数组类型
+### Array数组类型
 
 创建数组
 
@@ -1050,6 +1050,88 @@ for (const item of a) {}
 
 for (const [key, value] of a.entries()) {}
 ```
+
+### Set
+
+用于存储任何类型的唯一值，无论是基本还是对象引用。
+
+- 只能保存没有键名
+- 严格类型检测如字符串数组不等于数值数字
+- 值是唯一的
+- 遍历顺序是添加的顺序，方便保存回调函数
+
+
+
+#### 使用数组作为初始数据
+
+```javascript
+let hd = new Set(["1","2"]);
+console.log(hd.values());
+```
+
+#### 创建Set 添加数据
+
+```
+// 下面的数值1与"1"属于两个不同的值
+let set = new Set();
+set.add(1);
+set.add("1");
+console.log(set);
+```
+
+#### 不允许重复添加
+
+```
+let hd = new Set();
+
+hd.add("1");
+hd.add("2");
+hd.add("2");
+
+console.log(hd.values);
+```
+
+#### 获取数量
+
+```
+set.size
+```
+
+#### 元素检测
+
+```
+set.has("key");
+```
+
+#### 删除元素
+
+```
+set.delete("key");
+```
+
+#### 清楚所有元素
+
+```
+set.clear();
+```
+
+#### Set转换为数组
+
+```
+Array.from(set);
+```
+
+#### 移除大于5的数值
+
+```
+let hd = new Set("")
+```
+
+
+
+
+
+
 
 ## JavaScript中函数定义方式
 
