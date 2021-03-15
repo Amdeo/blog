@@ -221,7 +221,7 @@ for x,y in generator_func(l,l2):
 import time
 def func():
     print("Enter func")
-    time.sleep(3)
+    time.sleep(3) 
     print("exit func")
 
 func()
