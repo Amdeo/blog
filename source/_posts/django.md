@@ -107,3 +107,4 @@ python manage.py makemessages -l zh_hans --symlinks
 python manage.py makemessages -l en --symlinks
 ```
 
+然后执行翻译文件
