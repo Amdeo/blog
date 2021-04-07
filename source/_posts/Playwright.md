@@ -15,7 +15,7 @@ Playwright是一个强大的Python库，仅用一个API即可自动执行 Chromi
 
 Playwright提供的自动化技术是绿色的、功能强大、可靠且快速，支持 Linux 、 Mac 以及 Windows 操作系统。
 
-[项目地址](https://github.com/microsoft/playwright)
+[项目地址](https://github.com/microsoft/playwright-python)
 
 [文档地址](https://playwright.dev/python/)
 
