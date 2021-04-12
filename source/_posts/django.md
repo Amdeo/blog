@@ -108,3 +108,14 @@ python manage.py makemessages -l en --symlinks
 ```
 
 然后执行翻译文件
+
+
+
+## migrate回退
+
+```
+python manage.py migrate <app> <migrations script name>
+```
+
+`migrations script name` 可以是 0010_auto_20210412_0925 ，也可以是0010 `编号`
+
