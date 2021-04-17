@@ -60,3 +60,7 @@ lsof | less
 lsof -i:8080
 ```
 
+配置免密码登入ssh
+
+https://zhanqi.net/post/180814/
+
